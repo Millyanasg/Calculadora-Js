@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fira+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+
+}
+body{
+  display: flex;
+  background-color: skyblue;
+  align-items: center;
+  justify-content: center;
+
+
+
 }
 .fundo{
-
-    background-image: linear-gradient(pink, skyblue, peachpuff); 
-    height: 100vh;
-    color: black;
-    text-align: center;
-   
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+height: 100%;
+width: 100%;
 }
 
 
@@ -19,23 +33,28 @@ h1{
   font-size : 50px;
 }
 
-.h2{
+h2{
   font-family: 'Caveat', cursive;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Bruno Ace SC', cursive;
+ font-size: 20px;
+  text-align: center;
+  text-shadow: 0.5px 1.5px 2.5px #030303
 }
  
 .calculadora{
-  position: absolute;
   background-color: rgba(255, 20, 147, 1.0);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
   border-radius: 15px;
   padding: 15px;
   border-top: 2px solid #c1c1c1;
   border-right: 2px solid #c1c1c1;
   border-bottom: 2px solid #181818;
   border-left: 2px solid #181818;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+
+  
+
 }
 .botao{
   width: 50px;
@@ -54,7 +73,7 @@ h1{
 }
  
 .botao:hover{
-  background-color: orange;
+  background-color: #292929;
   
 }
 #resultado{
@@ -71,4 +90,8 @@ h1{
   color: black;
   text-align: right;
   padding: 0 10px;
+}
+p{
+  margin-top: 50px;
+  text-shadow: 1.5px 1.5px 2.5px #030303
 }
